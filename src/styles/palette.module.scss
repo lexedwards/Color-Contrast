@@ -1,0 +1,65 @@
+.icon_button{
+  border: none;
+  width: max-content;
+  height: max-content;
+  background: none;
+  cursor: pointer;
+}
+
+.mainApp {
+  display: flex;
+  padding: 0 2rem;
+  .palettePreview {
+    flex: 3 1 auto;
+    margin-right: 2rem;
+    padding: 1rem;
+    .paletteGrid {
+      display: grid;
+      grid-template-columns: 120px repeat(var(--gtc),1fr);
+      padding: 1rem;
+      &_Header {
+        place-self:center;
+        margin-bottom: 0.75rem;
+      }
+      &_shades {
+        &__label{
+          text-align: right;
+          place-self: stretch;
+          margin-right: 0.75rem;
+          text-transform: capitalize;
+        }
+        &__block{
+          place-self: stretch;
+          label {
+            cursor: pointer;
+            border-style: solid;
+            border-radius: 0.25rem;
+            border-width: 0.125rem;
+            border-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+              padding: 0.25rem;
+              margin: 0.6rem auto;
+            }
+          }
+          input[type=radio] {
+            position: absolute;
+            appearance: none;
+            &:checked + label {
+              border-color: #A3CBF9;
+            }
+          }
+        }
+      }
+    }
+    &__options {
+      display:flex;
+      align-items: center;
+      button {
+        flex-grow: 1;
+      }
+    }
+  }
+}

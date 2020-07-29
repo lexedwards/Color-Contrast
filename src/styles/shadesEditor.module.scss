@@ -1,0 +1,30 @@
+.editor {
+  flex: 2 1 auto;
+  padding: 1rem;
+  &__row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+  }
+}
+
+.button__danger {
+  background-color: #FFADBB;
+  border-color: #8A0008;
+  color: #8A0008;
+}
+
+.shadesArray {
+  display: flex;
+  &__block {
+    height: 2rem;
+    display: flex;
+    flex: 1 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+  &__label {
+    font-size: 1rem;
+  }
+}

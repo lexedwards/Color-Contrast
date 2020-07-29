@@ -1,0 +1,19 @@
+.bodyHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid hsla(0,0,17%, 0.14);
+  &__title {
+    display: flex;
+    align-items: flex-end;
+    h1 {
+      font-size: 1.5rem;
+      margin: 0 1rem 0 0;
+    }
+  }
+  &__ui {
+    display: flex;
+    align-items: center;
+  }
+}

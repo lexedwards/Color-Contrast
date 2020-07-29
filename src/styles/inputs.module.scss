@@ -1,0 +1,38 @@
+.input {
+
+  &__text {
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    background-color: #FFF;
+    border: 1px solid #919191;
+    border-radius: 0.25rem;
+    margin: 0.25rem;
+    box-shadow: 0px 2px 0px 0px hsla(0,0,17%, 0.14);
+  }
+
+  &__number {
+    @extend .input__text;
+    display: flex;
+    width: max-content;
+    input[type=number] {
+      appearance: textfield;
+      border:none;
+      font-size: 1rem;
+      width: 4ch;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-flow: column;
+    margin-left: 0.25rem;
+    button {
+      padding: 0;
+    }
+    &__flipSVG {
+      svg {
+        transform: rotate(180deg)
+      }
+    }
+  }
+}
